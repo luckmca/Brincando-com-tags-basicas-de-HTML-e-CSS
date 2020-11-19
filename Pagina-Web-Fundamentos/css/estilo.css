@@ -1,0 +1,158 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; /* define a familia da fonte em todo o site */
+    background: #ccc; /* cor de fundo de toda a pagina */
+    margin: 0; /* colocar margin 0 no body permite zerar a margem automatica inserida pelo navegador */
+
+}
+
+.parte1{
+
+    background-image: url(../imagens/bg-3.jpg); /* seleciona a imagem de fundo */
+    height: 500px; /* define o tamanho da imagem em px */
+    background-position: right center; /* define em qual posição a imagem vai estar, se vai pegar a parte de cima ou de baixo, esquerda ou direita da imagem*/
+    background-size: cover;   /* cover para utilizar toda a imagem, cortando apenas o que sobrar, de acordo com o definido no background-position */ 
+}
+
+.parte1 nav li{
+
+    display: inline-block; /* transformando elemento de bloco em linha e bloco*/
+    list-style: none; /* tirando as bolinhas automaticas da lista*/
+    padding: 6px; /* uma vez que esta em linha e bloco, um padding pra separar cada um*/
+    border: 1px solid white; /* borda para estilizar cada bloco em linha*/
+    
+}
+
+.parte1 nav ul{
+
+    text-align: right; /* como está inline, o comportamento é de texto, então pode alinhar a direita */
+    padding: 8px; /* padding para distanciar o elemento das margens */
+    box-sizing: border-box;
+}
+
+.parte1 nav li a{  /* formatação exclusiva do link*/
+
+    display:block; /*porque, se já foi feito acima? Porque o a por padrão é linha. então, altera pra bloco para poder formatar*/
+    padding: 8px;
+    background-color: rgba(27, 23, 23, 0.897); /* fundo do link*/
+    text-decoration: none;
+    color: white; /* cor do texto do link */
+    text-transform: uppercase;/* transforma em maiusculo*/
+    font-size: 12px; /*tamanho da fonte*/
+    letter-spacing: 2px; /* define o tamanho do espaço entre cada letra*/
+    box-sizing: border-box; /* faz o elemento nao aumentar o tamanho quando aplicar o padding*/
+    
+
+}
+
+.linkmenu:hover {
+
+    background-color: whitesmoke;
+    color: black;
+}
+
+.parte2{
+
+    text-align: center; /* alinhamento do texto, no caso no centro da div que ele faz parte */
+    color: white; /* define a cor do texto */
+    margin: 150px; /* define o tamanho da margem */
+
+}
+
+.parte2 h1{  /* foi selecionada a classe, depois um elemento dentro da classe, evitando criar uma classe só para o h1 */
+    text-transform: uppercase; /* para colocar a fonte toda maiuscula */
+    font-size: 46px; /* define o tamanho da fonte*/
+    text-shadow: 3px 3px 4px #333;  /* esse atributo para colocar sombreamento */  
+
+}
+
+.parte2 p{
+
+    background-color: rgba(0,0,0, .7);
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid white;
+
+
+}
+
+main{
+
+    width: 80%; /* width é a LARGURA do objeto selecionado */  
+    margin: auto; /* margin auto CENTRALIZA */
+    
+}
+
+.secao{  /* é o pai dos cards */
+
+    background-color: white; /* cor do fundo da secao1 */
+    padding: 15px; /* para dar um respiro entre a margem do main e o conteudo*/
+    margin-top: 15px; /* separar os dois do header e entre eles, a mesma classe com divs diferentes, ATENCAO*/
+    overflow: auto;  /* para voltar a altura por causa do float nos cards*/
+
+}
+
+.card {
+
+    width: 32%; /*tamanho dos elementos em relaçao a div que ele está*/
+    float: left; /*deixa os elementos flutuando*/
+    box-sizing: border-box; /* nao aumenta o tamanho da box se aplicar o padding */
+    
+
+
+}
+
+.card1, .card2{
+
+    margin-right: 2%; /*tamanho da margem direita em relação ao conteinter/div que ele está, pois o width do .card é 32%, da 96% do tamanho da div, entao a margem de 2% chega nos 100% */
+
+}
+
+.card img{
+
+    width: 100%;  /* para o tamanho da imagem sempre estar dentro da box, sem ultrapassar*/
+    display: block; /* IMAGEM É ELEMENTO INLINE, logo tem espaço embaixo. Para formatar, precisa transformar em bloco*/
+}
+
+.card p{ /* formatação dos textos abaixo dos cards*/
+
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin: 0;       /* margin 0 para o texto poder encostar nos cards. Ele só pode encostar porque a img que era inline foi alterada para bloco no display:block */
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    
+    
+}
+
+.linkcard{
+
+    color: white;    
+    text-decoration: none;
+}
+
+.linkcard:hover{
+
+    color:black;
+    background-color: white;
+}
+
+.secao article h2{ /* seleciona a classe, e o que quer dentro daquela div dessa classe*/
+
+
+    border-bottom: solid 2px #ccc; /* cor da borda de baixo. BORDER É DIFERENTE DE MARGIN, atenção!! */
+    padding-bottom: 3px;
+  
+}
+
+footer{
+
+    background-color: rgba(34, 25, 25, 0.555); /*cor de fundo do rodapé*/
+    color: white;  /*cor do texto do rodapé*/
+    text-align: center; /*alinhamento do texto, no centro*/
+    text-shadow: 1px 1px 1px grey; /*sombra do texto, x y sombra e cor*/
+    padding: 10px; /*aumentei o padding para centralizar o texto*/
+
+}

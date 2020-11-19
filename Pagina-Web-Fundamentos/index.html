@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <Title>Fundamentos WEB</Title>
+        <meta charset="utf-8">
+        <meta name="Author" content="Lucas Misael">
+        <meta name="Description" content="Como usar HTML5 e CSS na prática!">
+        <link rel="stylesheet" href="css/estilo.css"> <!-- utilizei o link rel para chamar o estilo css-->
+    </head>
+
+    <body>                         <!--conteúdo de toda a página fica dentro do body-->
+        <div id="principal1">  <!--utilizei uma div porque o conteúdo não tem relevancia semantica.-->
+
+        <header class="parte1">  <!--header porque é o cabeçalho dessa div-->
+            <nav>  <!--nav porque é a navegação principal do site, ou dessa div-->
+        
+            <ul class="links-lateral-superior"> <!--ul para fazer a lista dos links-->
+                <li><a class="linkmenu" href="#">Inicio</a></li>
+                <li><a class="linkmenu" href="#">Quem Sou Eu</a></li>
+                <li><a class="linkmenu" href="#">Contato</a></li>
+            </ul>
+            </nav>
+
+            <div class="parte2"> <!--mais uma div para poder formatar uma parte especifica, pode ter varias divs dentro de uma div-->
+
+            <h1>Curso Web Fundamentos</h1> <!--titulo principal, geralmente 1 por página-->
+
+            <p>Aprenda HTML, CSS e Javascript</p>  <!--sempre que for colocar algum texto, usa o p-->
+
+        </div>
+
+        </header>
+
+    </div>
+        
+        <main> <!-- porque nao uma div? porque é o conteúdo principal, com semântica, então abre o main-->
+
+            <section class="secao"> <!--pq não div? porque tem relevancia no main, então uma section é melhor-->
+
+                 <div class="card card1">  <!--agora sim uma div, não pq n tem relevancia, mas para formatação. Essa div esta dentro do main, entao já foi definida a relevancia dela, apenas para fins de formatação deste conteudo em particular-->
+
+                     <img src="imagens/card_01.png" alt=""> <!--alt vazio porque a descrição da imagem vai coincidir com o texto dentro dela, no caso aqui seletores-->
+                     <p> <a class="linkcard" href="#">Seletores</a></p> <!--mesmo que seja apenas uma palavra é uma boa pratica abrir o p-->
+                               
+                </div>
+
+                 <div class="card card2">  <!--pode definir uma classe principal e outra secundaria no mesmo elemento-->
+                
+                    <img src="imagens/card_02.jpg" alt="">
+                    <p><a class="linkcard" href="#">Posicionamento </a></p>
+                               
+                </div>
+
+                 <div class="card card3"> 
+                
+                    <img src="imagens/card_03.jpg" alt="">
+                    <p><a class="linkcard" href="#">Fontes </a></p>
+                               
+                </div>
+
+            </section>
+
+            <section class="secao"> <!--porque nao uma div? porque está dentro do main, e tem relevancia, então uma section é melhor-->
+
+                <article> <!--texto principal da pagina sempre será um article-->
+
+                    <h2>Fundamentos em Lorem Ipsum</h2> <!--subtitulo da pagina, o h1 já foi definido antes-->
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus vitae congue mauris rhoncus aenean. Ornare massa eget egestas purus viverra accumsan. Pellentesque pulvinar pellentesque habitant morbi tristique senectus. Etiam dignissim diam quis enim lobortis. Magnis dis parturient montes nascetur ridiculus mus. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra.</p>
+                        <p>Sapien faucibus et molestie ac feugiat sed. Lacus luctus accumsan tortor posuere ac ut. Vitae ultricies leo integer malesuada nunc. Vitae turpis massa sed elementum tempus egestas sed. Fermentum leo vel orci porta non. Duis convallis convallis tellus id interdum velit. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. Varius vel pharetra vel turpis nunc eget lorem dolor sed. Viverra justo nec ultrices dui sapien eget mi proin</p>
+                
+                </article>
+
+            </section>
+
+
+        </main>
+
+        <footer> <!--rodapé, poderia ter uma classe mas como é o único, não precisou. Se tiver mais, precisa colocar.-->
+            <p>Copyright &copy; 2020</p> 
+        </footer>
+
+
+
+    </body>
+
+
+
+</html>
