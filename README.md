@@ -5,4 +5,4 @@ básicas de HTML e atributos básicos do CSS, sem imagens.
 
 O em alguns documentos, o CSS foi utilizado INLINE (dentro do proprio documento HTML), a título de conhecimento.
 
-São minhas primeiras linhas com HTML/CSS, entçao não se assuste se estiver feio rs.
+São minhas primeiras linhas com HTML/CSS, então não se assuste se estiver feio rs.
